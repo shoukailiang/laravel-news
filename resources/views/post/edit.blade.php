@@ -7,7 +7,7 @@
                 {{csrf_field()}}
                 <div class="form-group">
                     <label>原标题：{{$post->title}}</label>
-                    <input name="title" type="text" class="form-control" placeholder="这里是标题" value="你好你好">
+                    <input name="title" type="text" class="form-control" placeholder="这里是标题" value="{{$post->title}}">
                 </div>
                 <div class="form-group">
                     <label>内容</label>

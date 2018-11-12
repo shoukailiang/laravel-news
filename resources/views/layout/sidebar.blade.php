@@ -14,7 +14,7 @@
     </div>
     <div class="travel">
         <div class="head">
-            <a class="title">旅游热点</a>
+            <a class="title">体育热点</a>
         </div>
         <div class="img">
             <img src="/image/travel.jpeg" alt="">
@@ -27,7 +27,7 @@
     </div>
     <div class="travel">
         <div class="head">
-            <a class="title">国际热点</a>
+            <a class="title">娱乐热点</a>
         </div>
         <div class="img">
             <img src="/image/internation.jpeg" alt="">
@@ -53,7 +53,7 @@
     </div>
     <div class="travel">
         <div class="head">
-            <a class="title">军事热点</a>
+            <a class="title">国际热点</a>
         </div>
         <div class="img">
             <img src="/image/military.jpg" alt="">
@@ -92,7 +92,7 @@
     </div>
     <div class="travel">
         <div class="head">
-            <a class="title">娱乐热点</a>
+            <a class="title">健康热点</a>
         </div>
         <div class="img">
             <img src="/image/yule.jpeg" alt="">
@@ -105,7 +105,7 @@
     </div>
     <div class="travel">
         <div class="head">
-            <a class="title">健康热点</a>
+            <a class="title">教育热点</a>
         </div>
         <div class="img">
             <img src="/image/health.jpg" alt="">

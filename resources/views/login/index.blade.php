@@ -64,7 +64,6 @@
                  <p>记住我</p>
                  <input type="checkbox" id="remeber" value="1" name="is_remember">
             </div>
-
             @include('layout.error')
         </form>
     </div>

@@ -37,10 +37,13 @@
         @foreach($posts as $post)
         <div class="blog-post">
             <h2 class="blog-post-title"><a href="/posts/{{$post->id}}" >{{$post->title}}</a></h2>
-            <p class="blog-post-meta">{{$post->created_at->toFormattedDateString()}} by <a class="name" href="/user/{{$post->user_id}}">{{$post->user->name}}</a></p> {{--这边$post->又调用了post和user的关联关系，多查找一次，消耗性能，所以要加预加载--}}
-            {!! str_limit($post->content,80, '...') !!}
-            <p>主题分类：{{count($post->topics)!==0?$post->topics[0]->name:"暂无主题"}}</p>
-            <p class="blog-post-meta">赞 {{$post->zans_count}}  | 评论 {{$post->comments_count}}</p>{{--withCount("comments")提供的--}}
+            <p class="blog-post-meta">{{$post->created_at->toFormattedDateString()}} by 
+                <a class="name" href="/user/{{$post->user_id}}">{{$post->user->name}}</a>
+            </p> {{--这边$post->又调用了post和user的关联关系，多查找一次，消耗性能，所以要加预加载--}}
+            {!! str_limit($post->content,88, '...') !!}
+            <div>主题分类：{{count($post->topics)!==0?$post->topics[0]->name:"暂无主题"}}</div>
+            <p class="blog-post-meta">赞 {{$post->zans_count}}  | 评论 {{$post->comments_count}}</p>
+            {{--withCount("comments")提供的--}}
         </div>
         @endforeach
         <div class="post-pagination">

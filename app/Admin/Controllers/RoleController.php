@@ -55,7 +55,6 @@ class RoleController extends Controller
         $this->validate(request(),[
            'permissions' => 'required|array'
         ]);
-
         $permissions = \App\AdminPermission::find(request('permissions'));
         $myPermissions = $role->permissions;
 
@@ -71,5 +70,4 @@ class RoleController extends Controller
         }
         return back();
     }
-
 }
