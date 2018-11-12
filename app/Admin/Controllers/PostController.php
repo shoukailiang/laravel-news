@@ -8,7 +8,7 @@ class PostController extends Controller
 {
     public function index()
     {
-        // status = 0, 未通过审核的文章
+        // status = 0, 为未审核
         $posts = \App\Post::withoutGlobalScope('available')
             ->where('status', 0)->orderByDesc('created_at')->paginate(10);
         return view('/admin/post/index', compact('posts'));

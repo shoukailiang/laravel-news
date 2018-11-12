@@ -54,7 +54,8 @@ class UserController extends Controller
      * 保存权限
      */
     public function storeRole(\App\AdminUser $user)
-    {
+    {   
+        // 提交过来的是一个数组
         $this->validate(request(),[
             'roles' => 'required|array'
         ]);

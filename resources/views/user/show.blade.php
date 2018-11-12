@@ -6,7 +6,11 @@
         <blockquote>
             <p><img src="{{$user->avatar}}" alt="" class="img-rounded" style="border-radius:500px; height: 40px"> {{$user->name}}
             </p>
-            <footer>关注：{{$user->stars_count}}｜粉丝：{{$user->fans_count}}｜文章：{{$user->posts_count}}</footer>
+            <footer>
+                 {{-- 粉丝暂时注释 --}}
+                {{-- 关注：{{$user->stars_count}}｜粉丝：{{$user->fans_count}}｜ --}}
+                文章：{{$user->posts_count}}
+            </footer>
             @include('user.badges.like', ['target_user' => $user])
         </blockquote>
     </div>
@@ -14,8 +18,9 @@
         <div class="nav-tabs-custom">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#tab_1" data-toggle="tab" aria-expanded="true">文章</a></li>
-                <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">关注</a></li>
-                <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false">粉丝</a></li>
+                {{-- 粉丝暂时注释 --}}
+                {{-- <li class=""><a href="#tab_2" data-toggle="tab" aria-expanded="false">关注</a></li>
+                <li class=""><a href="#tab_3" data-toggle="tab" aria-expanded="false">粉丝</a></li> --}}
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="tab_1">
